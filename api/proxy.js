@@ -19,10 +19,10 @@ module.exports = (req, res) => {
   createProxyMiddleware({
     target,
     changeOrigin: true, // 修改请求头中的Host为目标URL的origin，通常需要开启[5](@ref)
-    pathRewrite: {
-      '^/article/': '/article/', // 重写路径：移除路径中的 '/backend' 前缀
-      '^/category/': '/category/', // 重写路径：移除路径中的 '/backend' 前缀
-      '^/weChat/': '/weChat/', // 重写路径：移除路径中的 '/backend' 前缀
-    },
+    // pathRewrite: {
+    //   '^/article/': '/article/', // 重写路径：移除路径中的 '/backend' 前缀
+    //   '^/category/': '/category/', // 重写路径：移除路径中的 '/backend' 前缀
+    //   '^/weChat/': '/weChat/', // 重写路径：移除路径中的 '/backend' 前缀
+    // },
   })(req, res);
 };
