@@ -11,6 +11,10 @@
     {
       "source": "/weChat/(.*)",
       "destination": "/api/proxy"
+    },
+    {
+      "source": "/admin/(.*)",
+      "destination": "/api/proxy"
     }
   ]
 }

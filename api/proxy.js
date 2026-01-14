@@ -5,7 +5,7 @@ module.exports = (req, res) => {
   let target = '';
 
   // 根据请求路径确定代理目标
-  if (['article', 'category', 'weChat'].some(s => req.url.includes(s))) {
+  if (['article', 'category', 'weChat', 'admin'].some(s => req.url.includes(s))) {
     target = 'http://34.96.131.235:5002'; // 替换为你的实际后端地址
   }
 
